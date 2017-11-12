@@ -1,0 +1,29 @@
+local defcollide = require("defcollide.defcollide")
+
+function init(self)
+	print(defcollide.point_within_rectangle_centroid(0, 0, 0, 0, 10, 10)) -- true
+	print(defcollide.point_within_rectangle_centroid(6, 0, 0, 0, 10, 10)) -- false
+	
+
+end
+
+function final(self)
+	-- Add finalization code here
+	-- Remove this function if not needed
+end
+
+
+function on_message(self, message_id, message, sender)
+	-- Add message-handling code here
+	-- Remove this function if not needed
+end
+
+function on_input(self, action_id, action)
+	-- Add input-handling code here
+	-- Remove this function if not needed
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Remove this function if not needed
+end
